@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía para Crear tu Primera Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guía para Crear tu Primera Página Web</h1>
+        <p>Aprende los conceptos básicos de HTML y CSS para construir tu primer sitio web</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Paso 1: ¿Qué Necesitas para Empezar?</h2>
+            <p>Para crear una página web básica, necesitas:</p>
+            <ul>
+                <li><strong>Un editor de texto:</strong> como Visual Studio Code, Sublime Text o Notepad.</li>
+                <li><strong>Un navegador web:</strong> como Google Chrome o Firefox para ver tu página.</li>
+                <li><strong>Conocimientos básicos de HTML y CSS:</strong> que aprenderemos a continuación.</li>
+            </ul>
+            <img src="https://www.w3schools.com/html/img_notepad.png" alt="Ejemplo de editor de texto">
+        </section>
+
+        <section>
+            <h2>Paso 2: Crear un Archivo HTML</h2>
+            <p>Abre tu editor de texto y crea un nuevo archivo. Llámalo <code>index.html</code>. Este archivo contendrá la estructura de tu página web.</p>
+            <h3>Estructura Básica de un Archivo HTML</h3>
+            <div class="code-editor">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                </div>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de la Página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;¡Hola, Mundo!&lt;/h1&gt;
+    &lt;p&gt;Esta es tu primera página web&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+            <p>Guarda el archivo y ábrelo en tu navegador para ver el resultado.</p>
+        </section>
+
+        <section>
+            <h2>Paso 3: Entender las Etiquetas HTML</h2>
+            <p>HTML utiliza etiquetas para definir cada parte de la página. Algunas etiquetas importantes son:</p>
+            <ul>
+                <li><strong>&lt;h1&gt;...&lt;/h1&gt;:</strong> Encabezado principal de la página.</li>
+                <li><strong>&lt;p&gt;...&lt;/p&gt;:</strong> Párrafo de texto.</li>
+                <li><strong>&lt;a&gt;...&lt;/a&gt;:</strong> Enlace a otra página o sitio.</li>
+                <li><strong>&lt;img&gt;:</strong> Imagen en la página.</li>
+            </ul>
+            <p>Ejemplo de un enlace y una imagen:</p>
+            <div class="code-editor">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                </div>
+                <pre>
+&lt;a href="https://www.w3schools.com/html/html_intro.asp"&gt;Visita Ejemplo&lt;/a&gt;
+&lt;img src="https://www.w3schools.com/html/img_chrome.png" alt="Ejemplo de imagen"&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Paso 4: Agregar Estilos con CSS</h2>
+            <p>CSS permite agregar estilos a tu página para mejorar su apariencia. Crea un nuevo archivo en tu editor llamado <code>styles.css</code> y enlázalo en el archivo HTML, así:</p>
+            <div class="code-editor">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                </div>
+                <pre>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+                </pre>
+            </div>
+            <p>Ahora, en el archivo <code>styles.css</code>, agrega estilos como colores y tipos de fuente:</p>
+            <div class="code-editor">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                </div>
+                <pre>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+                </pre>
+            </div>
+            <p>Guarda y recarga tu página en el navegador para ver los cambios de estilo.</p>
+        </section>
+
+        <section>
+            <h2>Paso 5: Crear una Estructura Completa de Página</h2>
+            <p>A continuación, aquí tienes un ejemplo completo de código HTML y CSS que puedes usar como modelo:</p>
+            <div class="code-editor">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                </div>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Página Completa&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Bienvenido a Mi Página Completa&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;section&gt;
+      &lt;h2&gt;Introducción&lt;/h2&gt;
+      &lt;p&gt;Esta es una página web simple para aprender HTML y CSS.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section>
+            <h2>Paso 6: Practicar y Explorar Más</h2>
+            <p>¡Felicidades! Has creado tu primera página web básica. A medida que practiques, explora más etiquetas HTML y propiedades de CSS para mejorar tus habilidades.</p>
+            <p>Algunas ideas para practicar:</p>
+            <ul>
+                <li>Añadir listas y tablas en HTML.</li>
+                <li>Utilizar colores y fondos con CSS.</li>
+                <li>Crear una estructura de múltiples páginas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pagina para hacer tu primera pagina web | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
